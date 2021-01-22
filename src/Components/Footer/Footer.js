@@ -1,19 +1,13 @@
 import React from "react";
 import "./Footer.css";
 
+import { useHistory } from "react-router-dom";
+
 function Footer() {
+  const history = useHistory();
+
   return (
     <div className="footer">
-      {/* 1. First Container
-                1. About 
-                2. Admission
-                3. School life
-          2. Second Container
-                1.careers
-                2.Gallery
-                etc.
-        3. Copyright
-      */}
       <center>
         <h1>Quick Links</h1>
       </center>
@@ -29,7 +23,9 @@ function Footer() {
         <div className="footer__topContainerContent">
           <h2>Admission</h2>
           <h4>Admission Process</h4>
-          <h4>Apply Online Form</h4>
+          <h4 onClick={() => history.push("/admission/application")}>
+            Apply Online Form
+          </h4>
         </div>
         <div className="footer__topContainerContent">
           <h2>School Life</h2>

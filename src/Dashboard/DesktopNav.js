@@ -3,6 +3,8 @@ import { NavLink, useHistory, withRouter } from "react-router-dom";
 import "./Navbar.css";
 
 const DesktopNav = () => {
+  const history = useHistory();
+
   return (
     <div className="navbar__container">
       <NavLink

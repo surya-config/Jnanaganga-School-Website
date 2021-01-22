@@ -1,0 +1,43 @@
+.contactUs__container {
+  margin: 50px 80px;
+}
+
+.contactUs__container > h4 {
+  margin: 20px 50px;
+  text-align: justify;
+}
+
+.contactUs__card {
+  padding: 20px 50px;
+  border: 1px solid lightgrey;
+  width: 350px;
+  margin: 30px 0;
+  margin-left: 70px;
+}
+
+.contactUs__cardFooter {
+  display: grid;
+  place-items: center;
+}
+
+.contactUs__cardPhone {
+  display: flex;
+  align-items: flex-start;
+  margin: 30px 0;
+}
+
+.contactUs__cardPhoneContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 10px;
+}
+
+h4 {
+  margin-bottom: 5px;
+}
+
+h3 {
+  color: #666;
+  text-decoration: underline;
+}

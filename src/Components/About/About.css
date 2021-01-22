@@ -1,5 +1,5 @@
 .about {
-  width: 100%;
+  max-width: 100%;
   min-height: 100vh;
   overflow: hidden;
 }
@@ -16,9 +16,8 @@
 }
 
 .about__banner {
-  width: 100%;
-  height: 80vh;
-  background: teal;
+  /* background: url("../../assets/try1.svg"); */
+  position: relative;
 }
 
 .about__aboutus,
@@ -29,7 +28,7 @@
   flex: 1;
   margin: 50px;
   font-family: "Karla", sans-serif;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .about__aboutusLeft,

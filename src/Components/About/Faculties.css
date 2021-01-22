@@ -1,0 +1,47 @@
+.faculties {
+  margin: 50px 0;
+  font-family: "Work Sans", sans-serif;
+  width: 100%;
+}
+
+.faculties__dept {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: -50px;
+}
+
+.langDept {
+  margin: 0 50px;
+  font-family: "Work Sans", sans-serif;
+  margin-bottom: 50px;
+}
+
+.langDept > h1 {
+  position: relative;
+  top: 0px;
+  width: 100%;
+  margin-left: 200px;
+  margin-bottom: 0px;
+  color: #d35d6e;
+}
+
+.dept__content {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.faculty__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 25px;
+}
+
+.faculty__content > img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}

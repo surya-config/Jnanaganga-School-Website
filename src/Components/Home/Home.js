@@ -50,7 +50,7 @@ function Home() {
             <CountUp
               className="home__counter"
               start={100}
-              end={20000}
+              end={55}
               duration={5}
               delay={0}
             >
@@ -61,7 +61,7 @@ function Home() {
               )}
             </CountUp>
           ) : (
-            20000
+            55
           )}
 
           <h3>TEACHING STAFF</h3>
@@ -72,7 +72,7 @@ function Home() {
             <CountUp
               className="home__counter"
               start={100}
-              end={20000}
+              end={1000}
               duration={5}
               delay={0}
             >
@@ -83,7 +83,7 @@ function Home() {
               )}
             </CountUp>
           ) : (
-            20000
+            1000
           )}
           <h3>STUDENT STRENGTH</h3>
         </div>
@@ -93,7 +93,7 @@ function Home() {
             <CountUp
               className="home__counter"
               start={100}
-              end={20000}
+              end={44}
               duration={5}
               delay={0}
             >
@@ -104,7 +104,7 @@ function Home() {
               )}
             </CountUp>
           ) : (
-            20000
+            44
           )}
           <h3>NON-TEACHING STAFF</h3>
         </div>

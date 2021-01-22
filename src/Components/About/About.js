@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./About.css";
 
 import PropTypes from "prop-types";
@@ -9,6 +9,12 @@ import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
+import Faculties from "./Faculties";
+
+import ArrowBackIcon from "@material-ui/icons/ArrowBack";
+import { IconButton } from "@material-ui/core";
+
+import MainSvg from "../../assets/try1.svg";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -58,6 +64,12 @@ function About() {
   const [value, setValue] = React.useState(0);
   const [showFacultyMembers, setShowFacultyMembers] = React.useState(false);
 
+  const [width, setWidth] = React.useState(window.innerWidth);
+
+  useEffect(() => {
+    window.addEventListener("resize", () => setWidth(window.innerWidth));
+  }, [width]);
+
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
@@ -68,7 +80,9 @@ function About() {
 
   return (
     <div className="about">
-      <div className="about__banner"></div>
+      <div className="about__banner">
+        <img src="/images/hgh.svg" alt="HGH" width="200px" height="200px" />
+      </div>
 
       <center>
         <h2>What We Stand For</h2>
@@ -86,9 +100,8 @@ function About() {
             onChange={handleChange}
             indicatorColor="secondary"
             textColor="secondary"
-            variant="fullWidth"
+            variant={`${width > 768 ? "fullWidth" : "scrollable"}`}
             aria-label="full width tabs example"
-            className={classes.tabs}
           >
             <Tab label="About Us" {...a11yProps(0)} />
             <Tab label="Principal" {...a11yProps(1)} />
@@ -269,9 +282,11 @@ function About() {
                 </div>
               ) : (
                 <div className="about__facultiesContainer2">
-                  <button onClick={() => setShowFacultyMembers(false)}>
-                    Go Back
-                  </button>
+                  <IconButton onClick={() => setShowFacultyMembers(false)}>
+                    <ArrowBackIcon />
+                  </IconButton>
+
+                  <Faculties />
                 </div>
               )}
             </div>
