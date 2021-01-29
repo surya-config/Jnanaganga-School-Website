@@ -111,3 +111,53 @@ li {
 .about__facultiesContainer1 > button :hover {
   background-position: right center;
 }
+
+@media only screen and (max-width: 768px) {
+  .about {
+    max-width: 100%;
+    min-height: 100vh;
+    overflow: auto;
+  }
+
+  .about__aboutus,
+  .about__principal,
+  .about__chairman,
+  .about__facultiesFirstContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    font-family: "Karla", sans-serif;
+    overflow: auto;
+  }
+
+  .about__aboutusLeft,
+  .about__principalLeft,
+  .about__chairmanLeft,
+  .about__councilLeft,
+  .about__facultiesLeft {
+    flex: 1;
+  }
+
+  .about__councilLeft {
+    margin: 10px;
+  }
+
+  .about__aboutusRight,
+  .about__principalRight,
+  .about__chairmanRight,
+  .about__councilRight,
+  .about__facultiesRight {
+    flex: 1;
+  }
+
+  .about__faculites {
+    margin: 10px;
+  }
+
+  .about__facultiesContainer1 > button {
+    position: relative;
+    left: 10%;
+    padding: 15px 20px 19px 20px;
+    background-size: 100% auto;
+  }
+}

@@ -26,13 +26,15 @@ const MobileNav = () => {
               <MenuIcon />
             </IconButton>
           </div>
-          <div className="mobileheader__logoContainer">
-            <img
-              className="mobileheader__logo"
-              src="/images/logo.jpg"
-              alt="logo"
-            />
-          </div>
+          <center>
+            <div className="mobileheader__logoContainer">
+              <img
+                className="mobileheader__logo"
+                src="/images/logo.jpg"
+                alt="logo"
+              />
+            </div>
+          </center>
         </div>
       ) : (
         <div className="mobilenavbar__showContainer">
