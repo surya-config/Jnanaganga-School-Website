@@ -80,9 +80,9 @@ function About() {
 
   return (
     <div className="about">
-      <div className="about__banner">
+      {/* <div className="about__banner">
         <img src="/images/hgh.svg" alt="HGH" width="200px" height="200px" />
-      </div>
+      </div> */}
 
       <center>
         <h2>What We Stand For</h2>
@@ -253,7 +253,7 @@ function About() {
           </TabPanel>
           <TabPanel value={value} index={4} dir={theme.direction}>
             <div className="about__faculties">
-              {showFacultyMembers === false ? (
+              {/* {showFacultyMembers === false ? ( */}
                 <div className="about__facultiesContainer1">
                   <div className="about__facultiesFirstContainer">
                     <div className="about__facultiesLeft">
@@ -276,11 +276,11 @@ function About() {
                     </div>
                     <div className="about__facultiesRight"></div>
                   </div>
-                  <button onClick={() => setShowFacultyMembers(true)}>
+                  {/* <button onClick={() => setShowFacultyMembers(true)}>
                     Checkout all the Faculties
-                  </button>
+                  </button> */}
                 </div>
-              ) : (
+              {/* ) : (
                 <div className="about__facultiesContainer2">
                   <IconButton onClick={() => setShowFacultyMembers(false)}>
                     <ArrowBackIcon />
@@ -288,7 +288,7 @@ function About() {
 
                   <Faculties />
                 </div>
-              )}
+              )} */}
             </div>
           </TabPanel>
         </SwipeableViews>

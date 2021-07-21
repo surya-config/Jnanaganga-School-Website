@@ -26,7 +26,7 @@ const MobileNav = () => {
               <MenuIcon />
             </IconButton>
           </div>
-          <center>
+         
             <div className="mobileheader__logoContainer">
               <img
                 className="mobileheader__logo"
@@ -34,7 +34,7 @@ const MobileNav = () => {
                 alt="logo"
               />
             </div>
-          </center>
+        
         </div>
       ) : (
         <div className="mobilenavbar__showContainer">

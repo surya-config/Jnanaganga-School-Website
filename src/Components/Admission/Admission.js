@@ -57,6 +57,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "white",
     width: "100%",
     minHeight: "100vh",
+    marginTop:"50px"
   },
 }));
 

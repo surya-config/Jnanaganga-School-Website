@@ -12,6 +12,7 @@ body {
   font: 16px "Karla", sans-serif;
   color: #787878;
   font-weight: 400;
+  overflow-x: hidden;
 }
 
 code {

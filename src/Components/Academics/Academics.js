@@ -7,7 +7,6 @@ import { academicsData } from "./AcademicsContent";
 function Academics() {
   return (
     <div className="academics">
-      <h1>Academics</h1>
       <TabComponent
         itemArray={["Curriculum", "Library", "JRS's Achievers", "Laboratories"]}
         itemContent={academicsData}
