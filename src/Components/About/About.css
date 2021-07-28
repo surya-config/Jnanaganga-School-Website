@@ -1,0 +1,162 @@
+.about {
+  max-width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.about > center > h2 {
+  color: #ff3d5d;
+}
+
+.about > center > p {
+  width: 60%;
+  margin-bottom: 50px;
+  line-height: 22px;
+}
+
+.about__banner {
+  /* background: url("../../assets/try1.svg"); */
+  position: relative;
+}
+
+.about__aboutus,
+.about__principal,
+.about__chairman,
+.about__facultiesFirstContainer {
+  display: flex;
+  flex: 1;
+  margin: 50px;
+  font-family: "Karla", sans-serif;
+  overflow-x: hidden;
+}
+
+.about__aboutusLeft,
+.about__principalLeft,
+.about__chairmanLeft,
+.about__councilLeft,
+.about__facultiesLeft {
+  flex: 0.5;
+}
+
+.about__aboutusLeft > h4,
+.about__principalRight > h4,
+.about__chairmanLeft > h4,
+.about__councilLeft > h4,
+.about__facultiesLeft > h4 {
+  margin-bottom: 10px;
+  text-align: justify;
+  font-family: "Karla", sans-serif;
+}
+
+.about__aboutusRight,
+.about__principalRight,
+.about__chairmanRight,
+.about__councilRight,
+.about__facultiesRight {
+  flex: 0.5;
+}
+
+.about__councilLeft {
+  margin: 20px 70px;
+}
+
+.about__aboutusRight > img {
+  margin: 0 50px;
+  width: 100%;
+  object-fit: contain;
+  height: 350px;
+}
+
+li {
+  font-family: "Karla", sans-serif;
+  font-size: 17px;
+}
+
+.about__faculites {
+  margin: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.about__facultiesContainer1 > button {
+  font-size: 17px;
+  font-weight: 700;
+  padding: 15px 43px 19px 44px;
+  background-image: linear-gradient(
+    to right,
+    #7526d7 0%,
+    #f269fd 50%,
+    #7526d7 100%
+  );
+  color: white;
+  display: inline-block;
+  text-transform: capitalize;
+  background-size: 200% auto;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  border-radius: 36px;
+  border: none;
+  position: relative;
+  left: 40%;
+  outline-color: aquamarine;
+  cursor: pointer;
+}
+
+.about__facultiesContainer1 > button :hover {
+  background-position: right center;
+}
+
+@media only screen and (max-width: 768px) {
+  .about {
+    max-width: 100%;
+    min-height: 100vh;
+    overflow: auto;
+  }
+
+  .about__aboutus,
+  .about__principal,
+  .about__chairman,
+  .about__facultiesFirstContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    font-family: "Karla", sans-serif;
+    overflow: auto;
+  }
+
+  .about__aboutusLeft,
+  .about__principalLeft,
+  .about__chairmanLeft,
+  .about__councilLeft,
+  .about__facultiesLeft {
+    flex: 1;
+  }
+
+  .about__councilLeft {
+    margin: 10px;
+  }
+
+  .about__aboutusRight,
+  .about__principalRight,
+  .about__chairmanRight,
+  .about__councilRight,
+  .about__facultiesRight {
+    flex: 1;
+  }
+
+  .about__faculites {
+    margin: 10px;
+  }
+
+  .about__facultiesContainer1 > button {
+    position: relative;
+    left: 10%;
+    padding: 15px 20px 19px 20px;
+    background-size: 100% auto;
+  }
+}

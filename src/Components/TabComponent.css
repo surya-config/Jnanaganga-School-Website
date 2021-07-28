@@ -1,0 +1,25 @@
+.tabComponent__container {
+  display: flex;
+  align-items: center;
+  margin: 50px;
+  flex: 1;
+}
+
+.tabComponent__left,
+.tabComponent__right {
+  flex: 0.5;
+  font-family: "Karla", sans-serif;
+}
+
+.tabComponent__right > h5 {
+  font-size: 17px;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+@media only screen and (max-width: 768px) {
+  .tabComponent__container {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,185 @@
+.admissionForm {
+  min-height: 100vh;
+  margin-bottom: 100px;
+}
+
+.admission__form {
+  display: flex;
+  margin: 50px 10%;
+  flex: 1;
+  position: relative;
+}
+
+.admission__formLeft,
+.admission__formRight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 80px;
+  margin-left: 50px;
+  flex: 1;
+}
+
+.admission__formRight {
+  margin-left: 100px;
+}
+
+.admission__formLeft > input,
+.admission__formRight > input {
+  border: 1px solid #ffffff;
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(130, 130, 130, 0.1);
+  -moz-box-shadow: 0px 0px 30px 0px rgba(130, 130, 130, 0.1);
+  box-shadow: 0px 0px 30px 0px rgba(130, 130, 130, 0.1);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  display: block;
+  width: 100%;
+  line-height: 26px;
+  padding: 0px 28px;
+  color: #333333;
+  font-size: 16px;
+  font-weight: 400;
+  border: 1px solid #eeeeee;
+  height: 60px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-image: -webkit-linear-gradient(
+    hsla(0, 0%, 100%, 0),
+    hsla(0, 0%, 100%, 0)
+  );
+  width: 90%;
+  margin-bottom: 20px;
+  outline-color: steelblue;
+}
+
+.admission__formLeft > label,
+.admission__formRight > label {
+  margin: 20px 0;
+  outline: none;
+  color: #333;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.admissionForm > form > button {
+  width: 200px;
+  padding: 17px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #ffffff;
+  border-radius: 36px;
+  border: 2px solid #ffffff;
+  display: inline-block;
+
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  background: rgb(22, 132, 221);
+
+  z-index: 1;
+  font-family: "Karla", sans-serif;
+  margin: 20px 50px;
+  position: relative;
+  left: 70%;
+  bottom: 0px;
+  cursor: pointer;
+  outline: none;
+}
+
+.admission__formRight,
+.admission__formLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 0.5;
+}
+
+.admission__formLeft > input > placeholder,
+.admission__formRight > input > placeholder {
+  color: rgb(214, 214, 214);
+}
+
+.admission__address {
+  outline: #f40157 !important;
+  resize: none;
+  width: 104%;
+  margin-bottom: 20px;
+}
+
+.dob__selector {
+  width: 100%;
+  height: 50px;
+  outline-width: none;
+  border-radius: 24px !important;
+  margin-bottom: 30px;
+}
+
+.required:after {
+  content: " *";
+  color: red;
+}
+
+.requiredTerm:after {
+  content: " *";
+  color: red;
+  position: absolute;
+  left: 40px;
+  top: 5px;
+  font-size: 24px;
+}
+
+.admission__term {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  width: 1000px;
+  margin: 40px 200px;
+}
+
+.admission__termCheckbox > input {
+  margin-top: 20px;
+  margin-right: 10px;
+  width: 40px;
+}
+
+.admission__termMessage {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.admission__termMessage > p {
+  margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 768px) {
+  .admission__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .admission__formRight {
+    margin-left: 50px;
+  }
+
+  .admission__term {
+    margin-left: 0;
+    width: 90vw;
+  }
+
+  .admissionForm > form > button {
+    position: relative;
+    left: 10%;
+  }
+}
